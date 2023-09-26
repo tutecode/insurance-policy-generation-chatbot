@@ -20,6 +20,51 @@ You can also take a look at the file `images/System_architecture_diagram.drawio.
 
 ![System Diagram](images/System_architecture_diagram.drawio.png)
 
+### Chainlit
+
+
+Chainlit is an open-source Python package that makes it incredibly fast to build and share large language model (LLM) applications. It provides a ChatGPT-like user interface that allows developers to interact with their LLMs in a natural and intuitive way.
+
+Chainlit has a number of key features that make it a valuable tool for LLM developers, including:
+
+- Fast and easy development: Chainlit makes it possible to create LLM applications in minutes, even if you have no prior experience with web development.
+- Visualize multi-steps reasoning: Chainlit can visualize the intermediary steps that produced an output, which can help developers to understand and debug their models.
+- Element management and display: Chainlit provides a variety of UI elements that can be used to create rich and interactive applications.
+- Cloud deployment: Chainlit applications can be deployed to the cloud with a single click.
+
+Chainlit is still under development, but it is already being used by a number of companies and organizations to build innovative LLM applications. For example, Chainlit is being used to build:
+
+- Chatbots: Chatbots that can provide customer support, generate creative content, and answer questions in an informative way.
+- Code generation tools: Tools that can generate code in a variety of programming languages.
+- Educational tools: Tools that can help students to learn new concepts and skills.
+Chainlit is a powerful tool that can help developers to build and share LLM applications with ease. It is a valuable resource for anyone who is interested in using LLMs to solve real-world problems.
+
+### Qdrant
+
+Qdrant is a vector similarity search engine and vector database. It provides a production-ready service with a convenient API to store, search, and manage vectors with an additional payload.
+
+Vectors are high-dimensional data representations that are often used to represent unstructured data, such as text, images, and audio. Vector similarity search algorithms can be used to find similar vectors in a large collection, which can be useful for a variety of tasks, such as:
+
+- Recommendation systems: Qdrant can be used to build recommendation systems that suggest products, movies, or other items to users based on their past behavior.
+- Image search: Qdrant can be used to build image search engines that allow users to find similar images to a given query image.
+- Natural language processing (NLP): Qdrant can be used to build NLP applications that perform tasks such as text classification, sentiment analysis, and question answering.
+Qdrant is a relatively new vector database, but it has quickly gained popularity due to its ease of use, performance, and scalability. It is also open source and freely available for use.
+
+Here are some of the key features of Qdrant:
+
+Production-ready: Qdrant is designed to be used in production environments. It is scalable and can handle large volumes of data.
+Convenient API: Qdrant provides a convenient API for storing, searching, and managing vectors. The API is available in multiple languages, including Python, Java, and JavaScript.
+Extended filtering support: Qdrant supports extended filtering of search results based on payload values. This makes it possible to create more sophisticated search applications.
+Overall, Qdrant is a powerful and versatile vector database that can be used to build a wide variety of applications.
+
+https://github.com/qdrant/qdrant
+
+Don´t use ChromaDB because it's have a lot of bugs in deployment and updates daily.
+
+### Starting Services
+
+First we create the database then we check if the database is ready to upload information, then we start our ETL and then the database is ready.
+
 ## **Workflow**
 
 Code workflow 
