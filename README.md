@@ -68,9 +68,73 @@ Don´t use ChromaDB because it's have a lot of bugs in deployment and updates da
 
 ## **Workflow**
 
-Code workflow 
+Code workflow
 
 ![Workflow](images/workflow.png)
+
+1. The user sends a message to the chatbot.
+2. The chatbot filters the question to remove any irrelevant information.
+3. The chatbot creates a reasoning chain to determine how to answer the question.
+4. The chatbot selects the tools that it needs to answer the question, such as a question embedding model, a language chain policy filtering model, and an OpenAI answer model.
+5. The chatbot embeds the question using the question embedding model.
+6. The chatbot uses the language chain policy filtering model to filter the embedded question.
+7. The chatbot sends the filtered embedded question to the OpenAI answer model.
+8. The OpenAI answer model generates an answer to the question.
+9. The chatbot uses the language chain semantic search model to find similar chunks of text to the answer.
+10. The chatbot creates a context for the answer using the similar chunks of text.
+11. The chatbot sends the answer with the context to the user.
+
+This workflow is designed to help the chatbot generate informative and comprehensive answers to the user's questions. The use of multiple tools and models allows the chatbot to better understand the question, find relevant information, and generate a high-quality answer.
+
+Here is a more detailed explanation of each step:
+
+**Step 1: Filter the question**
+
+The chatbot first filters the question to remove any irrelevant information. This can help to improve the accuracy of the answer. For example, if the user asks "What is the capital of France?", the chatbot would remove the phrase "What is the capital of" from the question before processing it.
+
+**Step 2: Create a reasoning chain**
+
+The chatbot then creates a reasoning chain to determine how to answer the question. The reasoning chain is a sequence of steps that the chatbot will follow to generate the answer. For example, if the user asks "What is the best way to get to the airport?", the reasoning chain might be as follows:
+
+Determine the user's current location.
+Determine the user's desired arrival time at the airport.
+Find the different transportation options available to the user.
+Evaluate the different transportation options based on factors such as travel time, cost, and convenience.
+Recommend the best transportation option to the user.
+
+**Step 3: Select the tools**
+
+The chatbot then selects the tools that it needs to answer the question. This might include a question embedding model, a language chain policy filtering model, and an OpenAI answer model.
+
+**Step 4: Embed the question**
+
+The chatbot then embeds the question using the question embedding model. The question embedding model converts the question into a high-dimensional vector representation. This vector representation captures the meaning of the question and can be used to find similar questions and answers in a large database.
+
+**Step 5: Filter the embedded question**
+
+The chatbot then uses the language chain policy filtering model to filter the embedded question. This model helps to ensure that the chatbot only generates answers that are relevant to the user's query.
+
+**Step 6: Send the filtered embedded question to the OpenAI answer model**
+
+The chatbot then sends the filtered embedded question to the OpenAI answer model. The OpenAI answer model is a large language model that can generate text, translate languages, write different kinds of creative content, and answer questions in an informative way.
+
+**Step 7: Generate an answer**
+
+The OpenAI answer model generates an answer to the question. The answer is a text string that provides information about the topic of the question.
+
+**Step 8: Find similar chunks of text**
+
+The chatbot then uses the language chain semantic search model to find similar chunks of text to the answer. This model helps to ensure that the chatbot provides comprehensive information about the topic of the question.
+
+**Step 9: Create a context for the answer**
+
+The chatbot then creates a context for the answer using the similar chunks of text. This context provides additional information about the topic of the question and helps the user to understand the answer better.
+
+**Step 10: Send the answer with the context to the user**
+
+The chatbot finally sends the answer with the context to the user. The user can then read the answer and learn more about the topic of their question.
+
+This workflow is just one example of how a chatbot can be implemented. There are many other ways to design a chatbot, and the specific workflow will vary depending on the specific
 
 ## Folders architecture
 
