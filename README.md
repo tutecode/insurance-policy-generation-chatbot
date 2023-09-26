@@ -68,9 +68,9 @@ Don´t use ChromaDB because it's have a lot of bugs in deployment and updates da
 
 ## **Workflow**
 
-Code workflow
-
 ![Workflow](images/workflow.png)
+
+Code workflow:
 
 1. The user sends a message to the chatbot.
 2. The chatbot filters the question to remove any irrelevant information.
