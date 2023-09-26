@@ -18,6 +18,11 @@ docker compose up --build
 
 You can also take a look at the file `images/System_architecture_diagram.drawio.png` to have a graphical description of the microservices and how the communication is performed.
 
+1. Create the database (Vector Database: Qdrant).
+2. Check if the database is ready to upload information (Database Health-check).
+3. Start ETL and then the database is ready.
+4. Build frontend with Chainlit and the backend with FastAPI.
+   
 ![System Diagram](images/System_architecture_diagram.drawio.png)
 
 ### Chainlit
@@ -60,10 +65,6 @@ Overall, Qdrant is a powerful and versatile vector database that can be used to 
 https://github.com/qdrant/qdrant
 
 Don´t use ChromaDB because it's have a lot of bugs in deployment and updates daily.
-
-### Starting Services
-
-First we create the database then we check if the database is ready to upload information, then we start our ETL and then the database is ready.
 
 ## **Workflow**
 
